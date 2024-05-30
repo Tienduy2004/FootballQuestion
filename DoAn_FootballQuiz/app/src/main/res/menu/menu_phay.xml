@@ -1,0 +1,17 @@
+<!-- res/menu/drawer_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_themPlay"
+        android:title="Thêm chủ đề" />
+    <item
+        android:id="@+id/menu_separatorPlay"
+        android:title="Danh sách" />
+    <item
+        android:id="@+id/menu_xephangPlay"
+        android:title="Xếp hạng" />
+    <item
+        android:id="@+id/menu_dangxuatPlay"
+        android:title="Đăng xuất" />
+
+</menu>

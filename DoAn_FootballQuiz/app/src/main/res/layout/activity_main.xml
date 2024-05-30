@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/login"
+    >
+
+    <TextView
+        android:layout_marginTop="100sp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Tài Khoản:"
+                android:textColor="#FFFF"
+                android:textSize="20sp"/>
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/edtTK"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mật Khẩu:"
+                android:textColor="#FFFF"
+                android:textSize="20sp"/>
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/edtMK"
+                android:inputType="textPassword"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvSaiTKMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#F44336"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:text="Đăng Nhập"
+        android:textColor="@color/black"
+        android:backgroundTint="#CDDC39"/>
+    <Button
+        android:id="@+id/btnDangKyDN"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:text="Đăng Ký"
+        android:textColor="@color/black"
+        android:backgroundTint="#CDDC39"/>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CauHoiThem">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Câu Hỏi"
+        android:textSize="35dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edtNhapCauHoi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Nhập Câu Hỏi"
+            android:gravity="top"/>
+        <EditText
+            android:id="@+id/edtNhapDAnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Đáp Án A"/>
+        <EditText
+            android:id="@+id/edtNhapDAnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Đáp Án B"/>
+        <EditText
+            android:id="@+id/edtNhapDAnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Đáp Án C"/>
+        <EditText
+            android:id="@+id/edtNhapDAnD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Đáp Án D"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spLoaiSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/ivHinh"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn câu hỏi đúng"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#8BC34A"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rdDapAnA"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="Đáp Án A"/>
+            <RadioButton
+                android:id="@+id/rdDapAnB"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="Đáp Án B"/>
+            <RadioButton
+                android:id="@+id/rdDapAnC"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="Đáp Án C"/>
+            <RadioButton
+                android:id="@+id/rdDapAnD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đáp Án D"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="#8BC34A"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnThemCH"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
+            android:text="Thêm"/>
+        <Button
+            android:id="@+id/btnLamMoiCauHoi"
+            android:backgroundTint="#00BCD4"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Làm mới"/>
+        <Button
+            android:id="@+id/btnQuayLaiCauHoi"
+            android:backgroundTint="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"/>
+    </LinearLayout>
+
+
+</LinearLayout>

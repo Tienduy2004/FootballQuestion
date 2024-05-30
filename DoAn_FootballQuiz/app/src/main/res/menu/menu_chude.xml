@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/mn_themchude"
+    android:icon="@drawable/baseline_add_comment_24"
+    android:title="Thêm"/>
+    <item
+        android:id="@+id/mn_dsCheDe"
+        android:icon="@drawable/baseline_add_comment_24"
+        android:title="Danh Sách"/>
+    <item
+        android:id="@+id/mn_settingChuDe"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Cài Đặt"/>
+</menu>
